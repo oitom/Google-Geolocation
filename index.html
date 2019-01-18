@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Google Geolocation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    
+
+    <!-- fa fa icons-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- local style-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="intro">
+      <div class="container">
+        <div class="page-header">
+          <h3>Google Geolocation</h3>
+        </div>
+        <h4><i class="fa fa-angle-right titicon" aria-hidden="true"></i> Busque um local</h4>
+    
+        <input class="form-control" id="pac-input" type="text" autofocus placeholder="Insira um endereço">
+                
+        <a href="#" id="getLocation">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            Localização atual
+        </a>
+        
+        <div class="distance-bloc">
+          <label for=""><i class="fa fa-angle-right titicon" aria-hidden="true"></i> Distância: <span class="km-cur"></span></label>
+          <input id="distance" class="form-control" type="range" min="0" max="100" value="0">
+          <span class="km-min">0</span>
+          <span class="km-max">100</span>        
+        </div>
+
+        <div class="results">
+          <label for=""><i class="fa fa-angle-right titicon" aria-hidden="true"></i> Resultados:</label>
+          <div id="itens-place"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id= "map"></div>
+  
+    <script src="js/main.js"></script>
+    <script>
+        var map, infoWindow;
+        var activeInfoWindow;
+        var localAtual;
+        var markers = [];
+        var circAtual;
+        
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -11.481876976562393, lng: -53.07346688899998},
+            zoom: 5
+            });
+        }
+        
+        $("#getLocation").click(function(){ 
+            getLocate();
+            return false;
+        });
+        
+        setTimeout(function(){ 
+            loadSearch();
+            loadPlaces();
+        },100);
+
+        $("#distance").change(function() { 
+            loadPlacesDistance($(this).val());
+        });
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=[API_KEY]&libraries=places&callback=initMap"></script>
+  </body>
+</html>

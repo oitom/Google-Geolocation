@@ -1,0 +1,49 @@
+{
+    "places": [
+        {
+            "lat":-22.8471025, 
+            "lng": -47.0860079,
+            "name": "Condomínio Praça Capital",
+            "end": "Av. José Rocha Bonfim, 214 - Santa Genebra",
+            "horario": "Seg à Dom - 24h",
+            "info": "Eletroeletrônicos com dimensões máximas de 50cm x 70cm (AxL)",
+            "link": "https://www.google.com/maps/dir/?api=1&origin=&destination=Av.%20Jos%C3%A9%20Rocha%20Bonfim,%20214%20-%20Jardim%20Santa%20Genebra"
+        },
+        {
+            "lat": -22.875932, 
+            "lng": -47.0581521,
+            "name": "Parque Portugal - Lagoa do Taquaral",
+            "end": "Av. Dr. Heitor Penteado, 1671 - Parque Taquaral, Campinas - SP, CEP 13087-000",
+            "horario": "Seg à Sex - 4h45 às 22h",
+            "info": "Recebe eletroeletrônicos com dimensões máximas de 50cm x 70cm (AxL)",
+            "link": "https://www.google.com/maps/dir/?api=1&origin=&destination=Av.%20Dr.%20Heitor%20Penteado,%201671%20-%20Parque%20Taquaral,%20Campinas%20-%20SP,%2013087-000,%20Brasil"
+        }, 
+        {
+            "lat": -22.9254855, 
+            "lng": -47.1270489,
+            "name": "Shopping Parque das Bandeiras",
+            "end": "Avenida John Boyd Dunlop 3900, Campinas, São Paulo, CEP 13060-803",
+            "horario": "Seg à Sáb: 10h às 10h. Dom: 10h às 20h",
+            "info": "Recebe eletroeletrônicos com dimensões máximas de 30cm x 60cm (AxL)",
+            "link": "https://www.google.com/maps/dir/?api=1&origin=&destination=Avenida%20John%20Boyd%20Dunlop%203900,%20Campinas,%20S%C3%A3o%20Paulo,%2013060-803"
+        },
+        {
+            "lat": -23.201040, 
+            "lng": -45.892184,
+            "name": "SESC SJC",
+            "end": "Av. Dr. Ademar de Barros, 999 - Jardim Sao Dimas, São José dos Campos - SP. CEP 12245-010",
+            "horario": "Seg: Fechado. Ter, Qua, Qui e Sex: 13:00 – 22:00. Sáb: 10:00 – 19:00. Dom: 10:00 – 19:00",
+            "info": "Recebe eletroeletrônicos com dimensões máximas de 50cm x 70cm (AxL)",
+            "link": "https://www.google.com/maps/dir/?api=1&origin=Rua%20dos%20Piquir%C3%B5es%2080,%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos,%20S%C3%A3o%20Paulo,%2012246-020&destination=Av.%20Dr.%20Ademar%20de%20Barros,%20999%20-%20Jardim%20Sao%20Dimas,%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP,%2012245-010,%20Brasil"
+        },
+        {
+            "lat": -23.2000197, 
+            "lng": -45.8813034,
+            "name": "CenterVale Shopping",
+            "end": "Av. Dep. Benedito Matarazzo, 9403 - Jardim Oswaldo Cruz, São José dos Campos - SP, CEP 12215-160",
+            "horario": "Seg à Sáb - 10h às 22h. Dom - 12h às 21h",
+            "info": "Recebe eletroeletrônicos com dimensões máximas de 50cm x 70cm (AxL)",
+            "link": "https://www.google.com/maps/dir/?api=1&origin=Rua%20dos%20Piquir%C3%B5es%2080,%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos,%20S%C3%A3o%20Paulo,%2012246-020&destination=Av.%20Dep.%20Benedito%20Matarazzo,%209403%20-%20Jardim%20Oswaldo%20Cruz,%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP,%2012215-160,%20Brasil"
+        }   
+    ]
+}
